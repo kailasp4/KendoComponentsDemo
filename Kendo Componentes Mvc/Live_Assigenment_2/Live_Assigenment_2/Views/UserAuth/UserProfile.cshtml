@@ -1,0 +1,67 @@
+﻿@model Live_Assigenment_2.Models.UserModel
+
+@{
+    ViewBag.Title = "UserProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserProfile</h2>
+
+<div>
+    <h4>UserModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.c_userid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_userid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_city)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div id="grid"></div>
+
+<link href="~/Content/classic-main.css" rel="stylesheet" />
+<link href="~/Content/material-nova.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/kendo.all.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "/Product/GetAll",
+                    type: "Get"
+                },
+                create: {
+                    url: "/Product/Insert",
+                    type: "Get"
+                },
+                update: {
+                    url: "/Product/Update",
+                    type: "Get"
+                },
+                destroy: {
+                    url: "/Product/Delete",
+                    type: "Get"
+                }
+            },
+            error: function (e) {
+                alert("Status: " + e.status + "; Error Message: " + e.errorThrown);
+            },
+            pageSize: 5,
+            schema: {
+                model: {
+                    id: "pid",
+                    fields: {
+                        pname: { type: "string" },
+                        price: { type: "number" }
+                    }
+                }
+            }
+        });
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            height: 700,
+            filterable: true,
+            sortable: true,
+            pageable: true,
+            toolbar: ["create"],
+            columns: [
+                //{
+                //    field: "pid",
+                //    title: "Product ID",
+                    
+                //},
+                {
+                    field: "pname",
+                    title: "Product Name"
+                },
+                {
+                    field: "price",
+                    title: "Price"
+                },
+                {
+                    command: ["edit", "destroy"],
+                    title: "&nbsp;"
+                }
+            ],
+            editable: "popup"
+        });
+    });
+</script>

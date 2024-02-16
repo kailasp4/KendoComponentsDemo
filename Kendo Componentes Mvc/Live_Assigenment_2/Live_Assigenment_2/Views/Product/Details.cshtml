@@ -1,0 +1,74 @@
+﻿@model Live_Assigenment_2.Models.ProductModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.c_productid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_productid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_productname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_productname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_productprice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_productprice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_isactive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_isactive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_categoryid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_categoryid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_categoryname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_categoryname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.c_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.c_productid  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

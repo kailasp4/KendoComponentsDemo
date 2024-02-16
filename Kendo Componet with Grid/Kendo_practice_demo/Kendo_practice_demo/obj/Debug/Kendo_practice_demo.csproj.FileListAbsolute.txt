@@ -1,0 +1,86 @@
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\csc.exe
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\System.Collections.Immutable.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\System.Reflection.Metadata.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\vbc.exe
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\VBCSCompiler.exe
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\VBCSCompiler.exe.config
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Kendo_practice_demo.dll.config
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Kendo_practice_demo.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Kendo_practice_demo.pdb
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Antlr3.Runtime.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Microsoft.Web.Infrastructure.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Newtonsoft.Json.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Npgsql.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Buffers.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Memory.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Threading.Tasks.Extensions.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.ValueTuple.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Helpers.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Mvc.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Optimization.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Razor.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Deployment.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Razor.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\WebGrease.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Helpers.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Mvc.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Optimization.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Razor.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Deployment.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Razor.xml
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\bin\Antlr3.Runtime.pdb
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\obj\Debug\Kendo_practice_demo.csprojResolveAssemblyReference.cache
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\obj\Debug\Kendo_practice_demo.dll
+D:\Pankaj\ASP .net K\Kendo_practice_demo\Kendo_practice_demo\obj\Debug\Kendo_practice_demo.pdb
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\csc.exe
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\vbc.exe
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\VBCSCompiler.exe
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Kendo_practice_demo.dll.config
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Kendo_practice_demo.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Kendo_practice_demo.pdb
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Antlr3.Runtime.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Newtonsoft.Json.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Helpers.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Mvc.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Optimization.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Razor.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Razor.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\WebGrease.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Helpers.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Mvc.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Optimization.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.Razor.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Web.WebPages.Razor.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\Antlr3.Runtime.pdb
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\obj\Debug\Kendo_practice_demo.dll
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\obj\Debug\Kendo_practice_demo.pdb
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\kailas.patil\Downloads\WGT_Kendo\Kendo Componet with Grid\Kendo_practice_demo\Kendo_practice_demo\obj\Debug\Kendo_practice_demo.csprojResolveAssemblyReference.cache

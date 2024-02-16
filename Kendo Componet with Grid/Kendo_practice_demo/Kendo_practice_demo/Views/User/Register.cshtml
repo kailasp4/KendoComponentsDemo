@@ -1,0 +1,193 @@
+﻿@model Kendo_practice_demo.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Register";
+}
+<style>
+    
+</style>
+<h2>Register</h2>
+
+<link href="~/Content/material-nova.css" rel="stylesheet" />
+<link href="~/Content/classic-main.css" rel="stylesheet" />
+@*<link href="~/Content/examples-offline.css" rel="stylesheet" />*@
+@*<link href="~/Content/default-ocean-blue.css" rel="stylesheet" />*@
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        
+        <hr />
+        @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_empid, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.c_empid, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.c_empid, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_fname, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.c_fname, new { htmlAttributes = new { @class = "form-control" ,@id="txtName"} })
+                @Html.ValidationMessageFor(model => model.c_fname, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.c_email, new { htmlAttributes = new { @class = "form-control", @id = "txtEmail" } })
+                @Html.ValidationMessageFor(model => model.c_email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_gender, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                @Html.RadioButtonFor(model => model.c_gender,"Male", new {  @id = "txtMGender" } )
+                &nbsp;&nbsp;&nbsp; 
+                @Html.RadioButtonFor(model => model.c_gender, "Female", new { @id = "txtFGender" })
+                @Html.ValidationMessageFor(model => model.c_gender, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_dob, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10" style="padding-right:700px">
+                @Html.EditorFor(model => model.c_dob, new { htmlAttributes = new { @class = "form-control", @id = "txtDob" } })
+                @Html.ValidationMessageFor(model => model.c_dob, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_hobby, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                
+                    @Html.EditorFor(model => model.c_hobby , new { htmlAttributes = new { @class = "form-control", @id = "txtHobby" } })
+                    @Html.ValidationMessageFor(model => model.c_hobby, "", new { @class = "text-danger" })
+                
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_city, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10" style="padding-right:700px">
+                @Html.EditorFor(model => model.c_city, new { htmlAttributes = new { @class = "form-control", @id = "txtCity" } })
+                @Html.ValidationMessageFor(model => model.c_city, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_dept, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10" style="padding-right:700px">
+                @Html.EditorFor(model => model.c_dept, new { htmlAttributes = new { @class = "form-control" , @id = "txtDept" } })
+                @Html.ValidationMessageFor(model => model.c_dept, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_pass, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.c_pass, new { htmlAttributes = new { @class = "form-control" , @id = "txtPass" } })
+                @Html.ValidationMessageFor(model => model.c_pass, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Register" id="btnSubmit" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/kendo.all.min.js"></script>
+
+<script>
+        $(document).ready(function () {
+            $("#txtName").kendoTextBox({
+                label: {
+                    content: "Name",
+                    floating:true
+                }
+            });
+
+            $("#btnSumbit").kendoButton({
+                themeColor:"success"
+            });
+            $("#txtMGender").kendoRadioButton({
+                label:"Male"
+
+            });
+            $("#txtFGender").kendoRadioButton({
+                label: "Female"
+
+            });
+            $("#txtEmail").kendoTextBox({
+                label: {
+                    content: "Email",
+                    floating: true
+                }
+            });
+            $("#txtDob").kendoDatePicker({
+                format: "yyyy-MM-dd",
+                dataInput:true
+            });
+
+            $("#txtHobby").kendoCheckBox({
+               label:"Is Available"
+            });
+
+            $("#txtCity").kendoDropDownList({
+                autoBind: false,
+                optionLabel: "Select City",
+                dataTextField: "cityname",
+                dataValueField: "cityname",
+                dataSource: {
+                    type: "json",
+                    transport:
+                        {
+                            read:"/User/GetCity"
+                        }
+                }
+            });
+            $("#txtDept").kendoDropDownList({
+                optionLabel: "Select Department",
+                dataTextField: "@ViewBag.dept",
+                dataValueField: "@ViewBag.dept",
+                dataSource: {
+                    type: "JSON",
+                    transport:
+                        {
+                            read: "/User/GetDepartment"
+                        }
+                }
+            });
+            $("#txtPass").kendoTextBox({
+                label: {
+                    content: "Password",
+                    floating:true
+                }
+            });
+
+
+
+
+        });
+
+</script>
+
+}

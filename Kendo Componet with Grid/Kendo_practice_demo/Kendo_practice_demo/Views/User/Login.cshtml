@@ -1,0 +1,70 @@
+﻿@model Kendo_practice_demo.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<link href="~/Content/material-nova.css" rel="stylesheet" />
+<link href="~/Content/classic-main.css" rel="stylesheet" />
+<link href="~/Content/default-ocean-blue.css" rel="stylesheet" />
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        
+        <h1>Login Page</h1>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+           @* @Html.LabelFor(model => model.c_email, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.c_email, new { htmlAttributes = new { @class="form-control ", @id="txtEmail"} })
+                @Html.ValidationMessageFor(model => model.c_email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+           @* @Html.LabelFor(model => model.c_pass, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.c_pass, new { htmlAttributes = new { @class = "form-control", @id = "txtPass" } })
+                @Html.ValidationMessageFor(model => model.c_pass, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/kendo.all.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            $("#txtEmail").kendoTextBox({
+                label: 
+                    {
+                        content: "Email",
+                        floating: true
+                    }
+            });
+
+            $("#txtPass").kendoTextBox({
+                label:
+                    {
+                        content: "Password",
+                        floating: true
+                    }
+            });
+        });
+    </script>
+}

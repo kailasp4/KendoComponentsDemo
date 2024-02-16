@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sizing</title>
+    <meta charset="utf-8">
+    <link href="../content/shared/styles/examples-offline.css" rel="stylesheet">
+    <link href="../../styles/default-ocean-blue.css" rel="stylesheet">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jszip.min.js"></script>
+    <script src="../../js/kendo.all.min.js"></script>
+    <script src="../content/shared/js/console.js"></script>
+    
+    
+</head>
+<body>
+    <a class="offline-button" href="../index.html">Back</a>
+<script src="https://kendo.cdn.telerik.com/2023.1.117/js/jszip.min.js"></script>
+<div id="example">
+    <div class="k-d-flex gap shrink">
+        <div class="grid-container">
+            <div id="compact-grid"></div>
+        </div>
+        <div class="grid-container">
+            <div id="regular-grid"></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#compact-grid").kendoGrid({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "../content/dataviz/js/boeing-stock.json",
+                            dataType: "json"
+                        }
+                    },
+                    schema: {
+                        model: {
+                            fields: {
+                                Date: { type: "date" },
+                                Open: { type: "number" },
+                                High: { type: "number" },
+                                Low: { type: "number" },
+                                Close: { type: "number" },
+                                Volume: { type: "number" }
+                            }
+                        }
+                    },
+                    pageSize: 12
+                },
+                height: 437,
+                size: "small", // Enable compact Grid.
+                scrollable: true,
+                pageable: {
+                    buttonCount: 4
+                },
+                toolbar: [
+                    { template: "<span>High Density Size Grid</span>" },
+                    "excel"
+                ],
+                columns: [
+                    { field: "Date", format: "{0:dd MMM}", width: "70px" },
+                    { field: "Open", width: "70px", format: "{0:n2}" },
+                    { title: "Chng", width: "70px", 
+                        template: ({ Open, Close }) =>  {
+                            let change = Close - Open;
+
+                            return `<span style='color: ${ change < 0 ? "red" : "blue" }'>${kendo.format("{0:n2}", change)}</span>`;
+                        }
+                    },
+                    { title: "%Chng", width: "70px", 
+                        template: ({ Open, Close }) =>  {
+                            let changeP = (Close - Open) / Open;
+
+                            return `<span style='color: ${ changeP < 0 ? "red" : "" }'>${kendo.format("{0:p2}", changeP)}</span>`;
+                        }
+                    },
+                    { field: "High", width: "70px", format: "{0:n2}" },
+                    { field: "Low", width: "70px", format: "{0:n2}" },
+                    { field: "Close", width: "70px", format: "{0:n2}" },
+                    { field: "Volume", width: "70px" }
+                ]
+            });
+
+            $("#regular-grid").kendoGrid({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "../content/dataviz/js/boeing-stock.json",
+                            dataType: "json"
+                        }
+                    },
+                    schema: {
+                        model: {
+                            fields: {
+                                Date: { type: "date" },
+                                Open: { type: "number" },
+                                High: { type: "number" },
+                                Low: { type: "number" },
+                                Close: { type: "number" },
+                                Volume: { type: "number" }
+                            }
+                        }
+                    },
+                    pageSize: 12
+                },
+                height: 437,
+                scrollable: true,
+                pageable: {
+                    buttonCount: 4
+                },
+                toolbar: [
+                    { template: "<span>Default Size Grid</span>" },
+                    "excel"
+                ],
+                columns: [
+                    { field: "Date", format: "{0:dd MMM}", width: "100px" },
+                    { field: "Open", width: "100px", format: "{0:n2}" },
+                    { title: "Chng", width: "85px", 
+                        template: ({ Open, Close }) =>  {
+                            let change = Close - Open;
+
+                            return `<span style='color: ${ change < 0 ? "red" : "blue" }'>${kendo.format("{0:n2}", change)}</span>`;
+                        }
+                    },
+                    { title: "%Chng", width: "100px", 
+                        template: ({ Open, Close }) =>  {
+                            let changeP = (Close - Open) / Open;
+
+                            return `<span style='color: ${ changeP < 0 ? "red" : "" }'>${kendo.format("{0:p2}", changeP)}</span>`;
+                        }
+                    },
+                    { field: "High", width: "100px", format: "{0:n2}" },
+                    { field: "Low", width: "100px", format: "{0:n2}" },
+                    { field: "Close", width: "100px", format: "{0:n2}" },
+                    { field: "Volume", width: "112px" }
+                ]
+            });
+        });
+    </script>
+</div>
+<style>
+    .k-grid-excel {
+        margin-left: auto;
+        order: 1;
+    }
+
+    .grid-container {
+        width: 49%;
+    }
+
+    .gap {
+        gap: 1.5em;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .shrink {
+            flex-direction: column;
+        }
+
+        .grid-container {
+            width: 100%;
+        }
+    }
+</style>
+</body>
+</html>

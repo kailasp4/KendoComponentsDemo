@@ -1,0 +1,131 @@
+﻿@model Live_Assigenment_2.Models.ProductModel
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .width-control{
+        width:280px;
+    }
+</style>
+<h2>Add</h2>
+
+
+
+<script src="~/kendoui_new/js/jquery.min.js"></script>
+<link href="~/kendoui_new/styles/material-sky.css" rel="stylesheet" />
+<script src="~/kendoui_new/js/kendo.all.min.js"></script>
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>ProductModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.c_productid, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10 width-control">
+                @Html.HiddenFor(model => model.c_productid, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.ValidationMessageFor(model => model.c_productid, "", new { @class = "text-danger" })*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_productname, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10 width-control">
+                @Html.EditorFor(model => model.c_productname, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.c_productname, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_productprice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10 width-control">
+                @Html.EditorFor(model => model.c_productprice, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.c_productprice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_isactive, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10 width-control">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.c_isactive, new { htmlAttributes = new { @class = "form-control" ,@id = "txtisactive" } })
+                    @Html.ValidationMessageFor(model => model.c_isactive, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.c_categoryid, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.c_categoryid, new SelectList(ViewBag.Category, "c_categoryid", "c_categoryname"))
+                @Html.EditorFor(model => model.c_categoryid, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.c_categoryid, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_categoryid, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10 width-control">
+                @Html.EditorFor(model => model.c_categoryid, new { htmlAttributes = new { @class = "form-control", @id = "txtcategory" } }) 
+                @Html.ValidationMessageFor(model => model.c_categoryid, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.c_date, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10 width-control">
+                @Html.EditorFor(model => model.c_date, new { htmlAttributes = new { @class = "form-control", @id = "txtdate" } })
+                @Html.ValidationMessageFor(model => model.c_date, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" id="btnSubmit" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#btnSubmit").kendoButton({
+            themeColor: "success"
+        })
+        $("#txtcategory").kendoDropDownList({
+            optionLabel: "select category..",
+            dataTextField: "c_categoryname",
+            dataValueField: "c_categoryid",
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: "http://localhost:58976/Product/GetCategory",
+                   }
+            }
+        }).data("kendoDropDownList");
+
+        $("#txtisactive").kendoCheckBox({
+            lable: "",
+        });
+
+        $("#txtdate").kendoDatePicker({
+            format: "yyyy-MM-dd"
+
+
+        });
+    });
+</script>
